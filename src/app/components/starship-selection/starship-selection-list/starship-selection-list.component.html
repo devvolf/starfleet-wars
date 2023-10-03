@@ -1,0 +1,7 @@
+<div class="root">
+  <div *ngFor="let starship of starships; trackBy: trackBy">
+    <div class="item" (click)="onSelected(starship)">
+      <app-starship [starship]="starship"></app-starship>
+    </div>
+  </div>
+</div>

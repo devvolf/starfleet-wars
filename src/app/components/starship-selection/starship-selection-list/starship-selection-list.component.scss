@@ -1,0 +1,12 @@
+.root {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+
+  .item {
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+  }
+}

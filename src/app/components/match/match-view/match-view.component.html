@@ -1,0 +1,17 @@
+<div class="root">
+  <div class="header">
+    <h1>Match nr {{ matchNumber }}</h1>
+  </div>
+  <div class="content">
+    <div class="player">
+      <app-player [player]="players[0]" />
+    </div>
+    <span class="versus">VS</span>
+    <div class="player">
+      <app-player [player]="players[1]" />
+    </div>
+  </div>
+  <div class="actions">
+    <button class="button" mat-button (click)="onFight()">Fight</button>
+  </div>
+</div>

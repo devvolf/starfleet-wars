@@ -1,0 +1,4 @@
+<app-starship-selection-list
+  [starships]="(starships$ | async) || []"
+  (selected)="onStarshipSelected($event)"
+/>

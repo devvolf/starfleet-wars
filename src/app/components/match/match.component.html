@@ -1,0 +1,9 @@
+<div *ngIf="players$ | async as players">
+  <div *ngIf="players.length">
+    <app-match-view
+      [matchNumber]="(matchNumber$ | async) || 1"
+      [players]="players"
+      (fight)="onFight()"
+    />
+  </div>
+</div>
