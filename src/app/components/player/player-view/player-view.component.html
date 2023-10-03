@@ -7,6 +7,6 @@
     <app-starship [starship]="player.starship" />
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button (click)="onStarshipChange()">Change starship</button>
+    <button mat-button (click)="onStarshipChange()" data-testid="starship-change-button">Change starship</button>
   </mat-card-actions>
 </mat-card>

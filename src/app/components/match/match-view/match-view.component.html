@@ -1,17 +1,17 @@
-<div class="root">
+<div class="root" data-testid="match-view-root">
   <div class="header">
     <h1>Match nr {{ matchNumber }}</h1>
   </div>
   <div class="content">
     <div class="player">
-      <app-player [player]="players[0]" />
+      <app-player [player]="players[0]" data-testid="player-one"/>
     </div>
     <span class="versus">VS</span>
     <div class="player">
-      <app-player [player]="players[1]" />
+      <app-player [player]="players[1]" data-testid="player-two"/>
     </div>
   </div>
   <div class="actions">
-    <button class="button" mat-button (click)="onFight()">Fight</button>
+    <button class="button" mat-button (click)="onFight()" data-testid="fight-button">Fight</button>
   </div>
 </div>

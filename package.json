@@ -6,8 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "unit-test": "jest",
+    "unit-test:watch": "jest --watch",
+    "e2e-test": "npx playwright test --ui"
   },
   "private": true,
   "dependencies": {
@@ -42,7 +43,7 @@
     "@angular/cli": "~16.1.4",
     "@angular/compiler-cli": "^16.1.5",
     "@faker-js/faker": "^8.0.2",
-    "@playwright/test": "^1.36.2",
+    "@playwright/test": "^1.38.1",
     "typescript": "~4.9.5"
   },
   "jest": {

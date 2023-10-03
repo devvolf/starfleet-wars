@@ -3,9 +3,9 @@
 </div>
 <ng-template #loader>
   <div class="loader-wrapper">
-    <div class="loader">
-      <mat-spinner></mat-spinner>
-      <h1>Hold on commander, gathering fleet...</h1>
+    <div class="loader" data-testid="loader">
+      <mat-spinner data-testid="loader-spinner"/>
+      <h1 data-testid="loader-text">Hold on commander, gathering fleet...</h1>
     </div>
   </div>
 </ng-template>

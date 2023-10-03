@@ -1,6 +1,6 @@
-<div class="root">
+<div class="root" data-testid="starship-selection-list-root">
   <div *ngFor="let starship of starships; trackBy: trackBy">
-    <div class="item" (click)="onSelected(starship)">
+    <div class="item" (click)="onSelected(starship)" data-testid="starship-item">
       <app-starship [starship]="starship"></app-starship>
     </div>
   </div>

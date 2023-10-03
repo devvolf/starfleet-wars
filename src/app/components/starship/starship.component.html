@@ -1,14 +1,14 @@
-<mat-card class="card">
+<mat-card class="card" data-testid="starship-card">
   <mat-card-header class="header">
-    <mat-card-title>{{ starship.name }}</mat-card-title>
-    <mat-card-subtitle>{{ starship.starship_class }}</mat-card-subtitle>
+    <mat-card-title data-testid="starship-card-title">{{ starship.name }}</mat-card-title>
+    <mat-card-subtitle data-testid="starship-card-subtitle">{{ starship.starship_class }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <div class="info">
-      <p>Name: {{ starship.name }}</p>
-      <p>Model: {{ starship.model }}</p>
-      <p>Class: {{ starship.starship_class }}</p>
-      <p>Power: {{ starship.cost_in_credits }}</p>
+      <p data-testid="starship-card-info-name">Name: {{ starship.name }}</p>
+      <p data-testid="starship-card-info-model">Model: {{ starship.model }}</p>
+      <p data-testid="starship-card-info-class">Class: {{ starship.starship_class }}</p>
+      <p data-testid="starship-card-info-power">Power: {{ starship.cost_in_credits }}</p>
     </div>
   </mat-card-content>
 </mat-card>

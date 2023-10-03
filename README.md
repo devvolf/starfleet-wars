@@ -1,27 +1,28 @@
 # StarfleetWars
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+Simple duel based game in Star Wars universe using SWAPI.
 
-## Development server
+## Quick setup and run
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+yarn install
+yarn start
 
-## Code scaffolding
+Go to localhost:4200
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Resources limit
 
-## Build
+At the start, the application fetches all starships data from SWAPI to fill store. The fetch might take a while and there may HTTP 429 errors happen. You can change the "fleetLimit" environment variable to reduce number of requested resources.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Run unit tests
 
-## Running unit tests
+yarn unit-test
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Run E2E tests
 
-## Running end-to-end tests
+yarn start
+yarn e2e-test
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+HFGL!
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Alt Text](https://tenor.com/en-GB/view/spaceballs-jam-jamming-gif-10715218.gif)
